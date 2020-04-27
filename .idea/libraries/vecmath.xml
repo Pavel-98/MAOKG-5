@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="vecmath">
+    <CLASSES>
+      <root url="jar://C:/Program Files/Java/Java3D/1.5.2/lib/ext/vecmath.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
