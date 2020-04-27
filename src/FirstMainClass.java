@@ -71,17 +71,17 @@ public class FirstMainClass extends JFrame {
     private void addLightToUniverse(){
         Bounds bounds = new BoundingSphere(new Point3d(0.0, 0.0, 0.0), 20000);
         Bounds bounds1 = new BoundingSphere(new Point3d(0.0, 0.0, 10.0), 20000);
-        Color3f color = new Color3f(0/255f, 0/255f, 0/255f);
+        Color3f color = new Color3f(255/255f, 0/255f, 0/255f);
         Vector3f lightdirection = new Vector3f(-6f,-1f,5f);
-        Vector3f lightdirection1 = new Vector3f(0f,0.0f,5f);
+        Vector3f lightdirection1 = new Vector3f(0f,-1.0f,5f);
         DirectionalLight dirlight = new DirectionalLight(color,lightdirection);
         DirectionalLight dirlight1 = new DirectionalLight(color,lightdirection1);
         dirlight.setInfluencingBounds(bounds);
         dirlight1.setInfluencingBounds(bounds1);
         root.addChild(dirlight);
+
         root.addChild(dirlight1);
     }
-    
     private void printModelElementsList(Map<String,Shape3D> nameMap){
         for (String name : nameMap.keySet()) {
             System.out.printf("Name: %s\n", name);}
@@ -109,7 +109,7 @@ public class FirstMainClass extends JFrame {
         Texture texture = textureLoader.getTexture();
         texture.setBoundaryModeS(Texture.WRAP);
         texture.setBoundaryModeT(Texture.WRAP);
-        texture.setBoundaryColor( new Color4f( 0.0f, 1.0f, 0.0f, 0.0f ) );
+        texture.setBoundaryColor( new Color4f( 0.0f, 0.0f, 0.0f, 0.0f ) );
         return texture;
     }             
     

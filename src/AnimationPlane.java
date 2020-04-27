@@ -130,28 +130,7 @@ public class AnimationPlane implements ActionListener, KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         //Invoked when a key has been pressed.
-        if (e.getKeyChar()=='s') {xloc = xloc + .05f;}
-        if (e.getKeyChar()=='a') {xloc = xloc - .05f;}
-        if (e.getKeyChar()=='w') {yloc = yloc + .05f;}
-        if (e.getKeyChar()=='z') {yloc = yloc - .05f;}
 
-        if (e.getKeyChar()=='1') {
-            rotateTransformX.rotX(Math.PI/2);
-            translateTransform.mul(rotateTransformX);
-        }
-        if (e.getKeyChar()=='2') {
-            rotateTransformY.rotY(Math.PI/2);
-            translateTransform.mul(rotateTransformY);
-        }
-        if (e.getKeyChar()=='3') {
-            rotateTransformZ.rotZ(Math.PI/2);
-            translateTransform.mul(rotateTransformZ);
-        }
-        if (e.getKeyChar()=='0'){
-            rotateTransformY.rotY(Math.PI/2.8);
-            translateTransform.mul(rotateTransformY);
-            moveType=2;
-        }
     }
 
     @Override
